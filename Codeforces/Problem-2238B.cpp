@@ -10,7 +10,9 @@ int main()
     for(int i = 0; i < t; i++){
         cin >> n;
     }
-    int l = lcm(1, 1);
+    int l = lcm(8, 16);
+    int g = gcd(8, 16);
     cout << l << endl;
+    cout << g << endl;
     return 0;
 }
