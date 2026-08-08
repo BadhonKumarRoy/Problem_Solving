@@ -27,6 +27,6 @@ int main()
         }
         cout << co << "\n";
     }
-
+    cout << "Its Not fast algorithm :(" << endl;
     return 0;
 }
