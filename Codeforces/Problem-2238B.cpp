@@ -18,10 +18,13 @@ int main()
             {
                 for(c = 1; c <= n; c++)
                 {
+                    cout << "(" << a << ", " << b << ", " << c << ") ";
                     if(gcd(lcm(a, b), lcm(b, c)) == gcd(a,c))
                     {
+                        cout << "OK";
                         co++;
                     }
+                    cout << "\n";
                 }
             }
         }
