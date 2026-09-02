@@ -16,20 +16,17 @@ int main()
         {
             for(b = 1; b <= n; b++)
             {
+                if(a%b!=0) continue;
                 for(c = 1; c <= n; c++)
                 {
+                    //if((b*c) > n) continue;
                     cout << "(" << a << ", " << b << ", " << c << ") ";
-                    if(gcd(lcm(a, b), lcm(b, c)) == gcd(a,c))
-                    {
-                        cout << "OK";
-                        co++;
-                    }
-                    cout << "\n";
+                    co++;
+                    cout << co << "\n";
                 }
             }
         }
-        cout << co << "\n";
+
     }
-    cout << "Its Not fast algorithm :(" << endl;
     return 0;
 }
